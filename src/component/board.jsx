@@ -29,8 +29,8 @@ export const Board = () => {
             return (
               <Square
                 color={color}
-                height={20}
-                width={20}
+                height={SQUARE_SIZE}
+                width={SQUARE_SIZE}
                 yAxis={yAxis}
                 xAxis={xAxis}
               />
