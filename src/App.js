@@ -1,20 +1,17 @@
-import './App.css';
-import React, { useState } from 'react';
-import {Board} from "./component/board";
+import "./App.css";
+import React, { useState } from "react";
+import { Board } from "./component/board";
 
 function App() {
-
-  const [text, setText] = useState('')
+  const [text, setText] = useState("");
 
   return (
     <div className="App">
-        <Board/>
-    {/*  <div>*/}
-    {/*  {text}*/}
-    {/*</div>*/}
+      <div style={{ marginTop: "40vw", marginLeft: "40vw" }}>
+        <Board />
+      </div>
     </div>
   );
-
 }
 
 export default App;
