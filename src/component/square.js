@@ -1,4 +1,4 @@
-import horseImage from "../images/5.png";
+import horseImage from "../images/horse_chess.png";
 
 export const Square = ({ color, height, width }) => {
   return (
