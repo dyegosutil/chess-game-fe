@@ -1,3 +1,5 @@
+import horseImage from "../images/horse_chess.png"
+
 export const Square = ({ color, height, width }) => {
   return (
     <div
@@ -8,6 +10,8 @@ export const Square = ({ color, height, width }) => {
         border: "1px solid black",
         boxSizing: "border-box",
       }}
-    ></div>
+    >
+        <img src="../images/horse_chess.png" alt={"shit happened"}></img>
+    </div>
   );
 };

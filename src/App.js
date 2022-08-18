@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ marginTop: "40vw", marginLeft: "40vw" }}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "100vh"}}>
         <Board />
       </div>
     </div>
@@ -15,3 +15,6 @@ function App() {
 }
 
 export default App;
+
+// display: flex;
+//
