@@ -3,7 +3,7 @@ import { Square } from "./square";
 const NUMBER_OF_SQUARES_PER_ROW = 8;
 
 const BOARD_CONFIGS = {
-  SQUARE_SIZE: 20,
+  SQUARE_SIZE: 60,
   COLOR_1: "brown",
   COLOR_2: "white",
 };
@@ -21,18 +21,18 @@ export const Board = () => {
 
   return (
     <div style={{ maxWidth: SQUARE_SIZE * NUMBER_OF_SQUARES_PER_ROW }}>
-      {yAxis.map((yAxis) => (
+      {yAxis.map((yAxisElement) => (
         <div style={{ display: "flex", flexDirection: "row" }}>
-          {xAxis.map((xAxis, index) => {
-            const color = determineColor(yAxis, index + 1);
+          {xAxis.map((xAxisElement, index) => {
+            const color = determineColor(yAxisElement, index + 1);
 
             return (
               <Square
                 color={color}
                 height={SQUARE_SIZE}
                 width={SQUARE_SIZE}
-                yAxis={yAxis}
-                xAxis={xAxis}
+                yAxis={yAxisElement}
+                xAxis={xAxisElement}
               />
             );
           })}
