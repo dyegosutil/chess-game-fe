@@ -1,4 +1,5 @@
 import horseImage from "../images/horse_chess.png";
+import kingImage from "../images/king.png";
 
 export const Square = ({ color, height, width }) => {
   return (
@@ -16,7 +17,7 @@ export const Square = ({ color, height, width }) => {
         justifyContent: "center",
       }}
     >
-      <img src={horseImage} alt={"shit happened"} width={width * 0.8}></img>
+      <img src={kingImage} alt={"shit happened"} width={width * 0.8}></img>
     </div>
   );
 };
