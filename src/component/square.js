@@ -2,14 +2,17 @@ import horseImage from "../images/horse_chess.png";
 import kingImage from "../images/king.png";
 import { useState, useEffect } from "react";
 
+const initialRows = [1, 2, 7, 8];
+
 export const Square = ({ color, height, width, yAxis, xAxis }) => {
   const [hasFigure, setHasFigure] = useState(false);
 
   useEffect(() => {
-    if ((yAxis === 1 || yAxis === 5) && (xAxis === "a" || xAxis === "c")) {
+    // set initial state
+    if (initialRows.includes(yAxis)) {
       setHasFigure(true);
     }
-  }, [yAxis, xAxis]);
+  }, [yAxis]);
 
   const onClick = () => {
     if (hasFigure === true) {

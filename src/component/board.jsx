@@ -8,8 +8,18 @@ const BOARD_CONFIGS = {
   COLOR_2: "white",
 };
 
+enum Figure {
+  POND = "POND",
+  TOWER = "TOWER",
+  HORSE = "HORSE",
+  BISHOP = "BISHOP",
+  QUEEN = "QUEEN",
+  KING = "KING",
+}
+
 const yAxis = [1, 2, 3, 4, 5, 6, 7, 8];
 const xAxis = ["a", "b", "c", "d", "e", "f", "g", "h"];
+const initialBoardState = [{ coordinates: { yAxis: 1, xAxis: "a"}, figure: Figure.TOWER}]
 
 const determineColor = (yAxisPosition, xAxisPosition) =>
   (yAxisPosition + xAxisPosition) % 2 === 0
